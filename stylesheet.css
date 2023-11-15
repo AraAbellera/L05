@@ -204,7 +204,7 @@ a
         display: none;
     }
     #nava-icon:active + #nav-a {
-        display: block;
+        display: inline;
     }
     nav a
     {
