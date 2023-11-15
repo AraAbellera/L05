@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600&display=swap');
+
+.logo
+{
+    width: 100px;
+    height: 100px;
+    margin-left: 10px;
+    top: 20px;  
+}
+.logo-ani
+{
+    margin-top: -60px;
+    margin-left: -8px;
+    width: 0px;
+    height: 55px;
+    background: rgb(254, 166, 166);
+    transition: width 0.5s;
+}
+.logo:hover .logo-ani
+{
+    margin-top: -60px;
+    margin-left: -8px;
+    width: 115px;
+    height: 55px;
+    background: rgb(254, 166, 166);
+}
+.logo2
+{
+    width: 250px;
+    height: 100px;
+    margin-left: -30px;
+    margin-top: -30px;   
+}
+body
+{
+    background-color: black;
+    font-family: Nunito Semibold, sans-serif;
+    color: black;
+}
+nav
+{
+    margin-left: 24px;
+    font-size: larger;
+    word-spacing: 50px;
+    margin-top: -40px;    
+    color: black;
+}
+#package-div
+{
+    transition: all 0.5 ease-out;
+}
+.pt-txt
+{
+    color: black;
+    margin-top: -25px;
+    margin-left: 150px;
+    background-color: white;
+    width: 25%;
+    opacity: 0%;
+}
+#package a
+{
+    color: white;
+    transition: all 0.5 ease-out;
+}
+#package-div a:hover
+{
+    .pt-txt
+    {
+        opacity: 100%;
+    }
+    color: red;
+
+}
+
+
+
+a
+{
+    text-decoration: none;
+    color: white;    
+}
+.video-container video
+{
+    margin-left: -146px;
+    margin-top: -200px;
+    position: absolute;
+    object-fit: cover;
+    z-index: 0;
+}
+.video-container
+{
+    position: relative;
+}
+.everythingtop
+{
+    z-index: 1;
+    position: relative;
+}
+
+.section
+{
+    z-index: 1;
+    position: relative;
+    margin-top: 130px;
+    margin-left: -20px;
+    color: white;
+    background-color: black;
+    width: 1275px;
+}
+.row
+{
+    padding: 10px;
+    margin-left: 70px;
+}
+.cards
+{
+    margin-top: -110px;
+}
+.column
+{
+    float: left;
+    width: 30%;
+    padding: 0 10px;
+}
+.heading
+{
+    margin-top: 700px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    word-spacing: 5px;
+}
+.cls-1
+{
+    fill: #fff;
+}
+.cls-2
+{
+    font-weight: bolder;
+    font-family: 'Eras Bold ITC';
+    font-size: 36.42px;
+    letter-spacing: .02em;
+}
+#home
+{
+    color: red;
+    transition: all 0.5 ease-out;
+}
+#resg
+{
+    color: white;
+    transition: all 0.5 ease-out;
+}
+#resg:hover
+{
+    color: red;
+}
+#cruise
+{
+    color: white;
+    transition: all 0.5 ease-out;
+}
+#cruise:hover
+{
+    color: red;
+}
+#contact
+{
+    color: white;
+    transition: all 0.5 ease-out;
+}
+#contact:hover
+{
+    color: red;
+}
+nav img
+{
+    display: none;
+}
+@media only screen and (max-width: 600px)
+{
+    .logo svg
+    {
+        width: 300%;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    body
+    {
+        margin:0;
+        padding:0;
+        height:100%; 
+        background-color: white;
+    }
+    .nav-whole img
+    {
+        display: inline;
+        margin-left: 1115px;
+        margin-top: -35px;
+    }
+    .nava {
+        display: none;
+    }
+    #nava-icon:active + #nav-a {
+        display: block;
+    }
+    nav a
+    {
+        font-size: 55px;
+        margin-left: 10px;
+    }
+    .video-container video {
+        top: 50%;
+        left: 50%;
+        width: 290%;
+        transform: translate(0%, 30%);
+      }
+    footer
+    {
+        display: none;
+    }
+    .column
+    {
+        float: none;
+        width: 100%; /* Set the width to occupy the entire available space */
+        padding: 0 10px;
+        margin-bottom: 20px; /* Add margin between stacked images */
+    }
+      
+      /* Remove the fixed height and width for the images */
+    .column .card
+    {
+        padding: 20px;
+        color: black;
+    }
+      
+    .column .card img
+    {
+        width: 200%;
+        height: auto; /* Maintain aspect ratio */
+    }
+    .section
+    {
+        background-color: white;
+    }
+    #home
+    {
+        color: red;
+    }
+    #resg, #cruise, #contact, #package
+    {
+        color: black;
+    }
+    .pt-txt
+    {
+        color: black;
+        margin-top: -80px;
+        margin-left: 400px;
+        background-color: white;
+        width: 200%;
+        opacity: 0%;
+    }
+    #package-div
+    {
+        width: 500%;
+    }
+}
